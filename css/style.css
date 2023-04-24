@@ -1,3 +1,37 @@
-
+body {
+  margin: 0 auto;
+  width: 80%;
+}
+body div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body div h1 {
+  color: blue;
+}
+body div table {
+  border-collapse: collapse;
+  text-align: left;
+}
+body div table tr {
+  padding: 10px;
+}
+body div table tr th {
+  background-color: rgb(235, 255, 255);
+  padding: 10px 0;
+  border-top: 1px solid rgb(185, 185, 255);
+  border-bottom: 1px solid rgb(185, 185, 255);
+}
+body div table tr td {
+  padding: 10px 0;
+  border-top: 1px solid rgb(185, 185, 255);
+  border-bottom: 1px solid rgb(185, 185, 255);
+}
+body div table tr:nth-child(odd) {
+  background-color: rgb(150, 236, 236);
+  border-top: 1px solid rgb(185, 185, 255);
+  border-bottom: 1px solid rgb(185, 185, 255);
+}
 
 /*# sourceMappingURL=style.css.map */
