@@ -1,39 +1,101 @@
+@import 'mixins';
+@import 'var';
+
 body {
     margin: 0 auto;
-    width: 80%;
-
+    width: $width;
 
     div {
-        display: flex;
-    flex-direction: column;
-    
-    text-align: center;
+        @include display;
+        text-align: center;
+
         h1 {
-            color: blue;
+            color: $color1;
         }
+
         table {
             border-collapse: collapse;
             text-align: left;
+
             tr {
                 padding: 10px;
+
                 th {
-                    background-color: rgb(235, 255, 255);
-                    padding: 10px 0;
-                    border-top: 1px solid rgb(185, 185, 255);
-                    border-bottom: 1px solid rgb(185, 185, 255);
+                    @include style1;
                 }
+
                 td {
-                    padding: 10px 0;
-                    border-top: 1px solid rgb(185, 185, 255);
-                    border-bottom: 1px solid rgb(185, 185, 255);
+                    @include style2;
                 }
-                
                 
             }
             tr:nth-child(odd) {
                 background-color: rgb(150, 236, 236);
                 border-top: 1px solid rgb(185, 185, 255);
                 border-bottom: 1px solid rgb(185, 185, 255);
+            }
+        }
+        form {
+            margin: 0 auto;
+            width: 80%;
+            background-color: rgb(229, 249, 243);
+            padding: 10px;
+            border: 1px solid rgb(185, 185, 255);
+            border-radius: 10px;
+            .inputs {
+                text-align: left;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 5px;
+                label {
+                   width: 300px; 
+                   margin: 5px;
+                }
+                input {
+                    width: 340px;
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+            .date {
+                text-align: left;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 5px;
+                .labelDate{
+
+                    label { 
+                        margin: 5px 20px 5px 5px;
+                     }
+                }
+                .inputDate {
+                    display: flex;
+                    flex-direction: row;
+                    label{
+                        margin: 5px;
+                    }
+                    input {
+                        line-height: 30px;
+                        border: none;
+                        border-radius: 10px;
+                        width: 300px;
+
+                    }
+                }
+            }
+            .buttons {
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                input {
+                    width: 120px;
+                    border: none;
+                    border-radius: 10px;
+                    margin: 10px;
+                    padding: 5px;
+                }
             }
         }
     }

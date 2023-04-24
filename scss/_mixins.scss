@@ -1,0 +1,17 @@
+@mixin style1 {
+    background-color: rgb(235, 255, 255);
+    padding: 10px 0;
+    border-top: 1px solid rgb(185, 185, 255);
+    border-bottom: 1px solid rgb(185, 185, 255);
+}
+
+@mixin style2 {
+    padding: 10px 0;
+    border-top: 1px solid rgb(185, 185, 255);
+    border-bottom: 1px solid rgb(185, 185, 255);
+}
+
+@mixin display {
+    display: flex;
+    flex-direction: column;
+}

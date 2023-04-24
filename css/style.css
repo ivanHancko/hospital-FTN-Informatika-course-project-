@@ -33,5 +33,64 @@ body div table tr:nth-child(odd) {
   border-top: 1px solid rgb(185, 185, 255);
   border-bottom: 1px solid rgb(185, 185, 255);
 }
+body div form {
+  margin: 0 auto;
+  width: 80%;
+  background-color: rgb(229, 249, 243);
+  padding: 10px;
+  border: 1px solid rgb(185, 185, 255);
+  border-radius: 10px;
+}
+body div form .inputs {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+body div form .inputs label {
+  width: 300px;
+  margin: 5px;
+}
+body div form .inputs input {
+  width: 340px;
+  border: none;
+  border-radius: 10px;
+}
+body div form .date {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+body div form .date .labelDate label {
+  margin: 5px 20px 5px 5px;
+}
+body div form .date .inputDate {
+  display: flex;
+  flex-direction: row;
+}
+body div form .date .inputDate label {
+  margin: 5px;
+}
+body div form .date .inputDate input {
+  line-height: 30px;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+}
+body div form .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+body div form .buttons input {
+  width: 120px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */

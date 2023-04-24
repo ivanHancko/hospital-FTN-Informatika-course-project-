@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Dodavanje doktora</h1>
+        <form action="#" method="post">
+            <div class="inputs">
+                <label for="ime">Ime</label>
+                <input type="text" name="ime" id="ime">
+                <label for="prezime">Prezime</label>
+                <input type="text" name="prezime" id="prezime">
+            </div>
+
+            <div class="inputs">
+                <label for="specijalnost">Specijalnost</label>
+                <input type="text" name="specijalnost" id="specijalnost">
+                <label for="kancelarija">Kancelarija</label>
+                <input type="text" name="kancelarija" id="kancelarija">
+            </div>
+            <div class="date">
+                <div class="labelDate">
+                    <label for="radnoVremeOd">Radno vreme</label>
+                </div>
+            <div class="inputDate">
+                <input type="datetime-local" name="radnoVremeOd" id="radnoVremeOd">
+                <label for="radnoVremeDo">-</label>
+                <input type="datetime-local" name="radnoVremeDo" id="radnoVremeDo">
+            </div>   
+        </div>
+        
+        <div class="buttons">
+            <input type="submit" value="Dodaj">
+            <input type="reset" value="Odustani">
+        </div>
+            
+        </form>
+
+    </div>
+</body>
+</html>
